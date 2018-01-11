@@ -11,5 +11,6 @@ html
       each pet in pets
         tr
           td
-            input(class='pet-name', value=pet.name)
+            input(class='pet-name', value=pet.name onkeypress="return submitNewName(event)")
           td= pet.species_name
+  script(src="main.js")
